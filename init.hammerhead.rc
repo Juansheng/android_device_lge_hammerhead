@@ -284,7 +284,7 @@ service bridgemgrd /system/bin/bridgemgrd
 service qmuxd /system/bin/qmuxd
     class main
     user radio
-    group radio audio bluetooth gps
+    group radio audio bluetooth wakelock gps
 
 service netmgrd /system/bin/netmgrd
     class main
@@ -294,7 +294,7 @@ service netmgrd /system/bin/netmgrd
 service sensors /system/bin/sensors.qcom
     class main
     user root
-    group root
+    group root wakelock
 
 service irsc_util /system/bin/irsc_util "/etc/sec_config"
     class main
@@ -353,7 +353,7 @@ service bdAddrLoader /system/bin/bdAddrLoader -f /persist/bluetooth/.bdaddr -h -
 
 # bugreport is triggered by holding down volume down, volume up and power
 service bugreport /system/bin/dumpstate -d -p -B \
-        -o /data/data/com.android.shell/files/bugreports/bugreport
+        -o /data/user_de/0/com.android.shell/files/bugreports/bugreport
     class main
     disabled
     oneshot
