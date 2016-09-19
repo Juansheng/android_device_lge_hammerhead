@@ -8,5 +8,5 @@ unix_socket_send(mediaserver, mpdecision, mpdecision)
 # TODO: Investigate the specific type of socket.
 allow mediaserver self:socket create_socket_perms;
 
-# For text relocations in /system/vendor/lib/libmmjpeg.so
-allow cameraserver system_file:file execmod;
+# needed for widevine classic
+allow mediaserver tee_device:chr_file { ioctl open read write };
