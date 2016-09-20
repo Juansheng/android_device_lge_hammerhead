@@ -272,7 +272,8 @@
 
     <!-- Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">1</integer>
-    <!-- Whether Multiuser UI should be shown -->
+
+    <!-- Whether UI for multi user should be shown -->
     <bool name="config_enableMultiUserUI">false</bool>
 
     <!-- Is the device capable of hot swapping an UICC Card -->
@@ -299,4 +300,8 @@
 
     <!-- Enable doze powersaving mode -->
     <bool name="config_enableAutoPowerModes">true</bool>
+
+    <!-- True if the device supports at least one form of multi-window.
+         E.g. freeform, split-screen, picture-in-picture. -->
+    <bool name="config_supportsMultiWindow">false</bool>
 </resources>
