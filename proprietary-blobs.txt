@@ -52,7 +52,6 @@
 /system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 /system/framework/qcrilhook.jar
 /system/lib/hw/flp.msm8974.so
-/system/lib/hw/gps.msm8974.so
 /system/lib/libadsprpc.so
 /system/lib/libchromatix_imx179_common.so
 /system/lib/libchromatix_imx179_default_video.so
@@ -65,10 +64,7 @@
 /system/lib/libdrmdiag.so
 /system/lib/libdrmfs.so
 /system/lib/libdrmtime.so
-/system/lib/libgps.utils.so
 /system/lib/libI420colorconvert.so
-/system/lib/libloc_core.so
-/system/lib/libloc_eng.so
 /system/lib/libmm-abl.so
 /system/lib/libmm-color-convertor.so
 /system/lib/libmmcamera_hdr_lib.so
